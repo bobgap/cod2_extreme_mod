@@ -92,9 +92,24 @@ main()
 	level.killtriggers[7].height = 12;
 
 	level.killtriggers[8] = spawnstruct();
-	level.killtriggers[8].origin = (1932, 1054, 336);
-	level.killtriggers[8].radius = 12;
-	level.killtriggers[8].height = 12;
+	level.killtriggers[8].origin = (2034.4, 2689.74, 225.25);
+	level.killtriggers[8].radius = 30;
+	level.killtriggers[8].height = 20;
+
+//kill on roof of axis spawn porch  Borch 6/15/2017
+
+	level.killtriggers[9] = spawnstruct();
+	level.killtriggers[9].origin = (2057, 2702, 224);
+	level.killtriggers[9].radius = 12;
+	level.killtriggers[9].height = 12;
 
 	thread maps\mp\_killtriggers::init();
+
+//remove allied far forward spawns  Borch 6/19/2017
+//restored these 9/8/2019
+//	extreme\_ex_spawnpoints::deleteSpawnPoint((1812, 1921, 87));
+//      extreme\_ex_spawnpoints::deleteSpawnPoint((2040, 1336, 101));
+
+
+
 }

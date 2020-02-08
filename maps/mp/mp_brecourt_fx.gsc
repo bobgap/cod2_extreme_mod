@@ -10,11 +10,8 @@ main()
 precacheFX()
 {
 	level._effect["flak_explosion"]	= [[level.ex_PrecacheEffect]]("fx/explosions/flak88_explosion.efx");
-
 	if(level.ex_ambfogbankfx) level._effect["fogbank_small_duhoc"] = [[level.ex_PrecacheEffect]]("fx/misc/fogbank_small_duhoc.efx");
-
 	if(level.ex_ambsmokefx) level._effect["thin_light_smoke_L"] = [[level.ex_PrecacheEffect]]("fx/smoke/thin_light_smoke_L.efx");
-
 	if(level.ex_ambfliesfx) level._effect["insects_carcass_flies"] = [[level.ex_PrecacheEffect]]("fx/misc/insects_carcass_flies.efx");
 }
 

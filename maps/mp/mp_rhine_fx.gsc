@@ -1,16 +1,16 @@
 
 main()
 {
+	thread lampglowfx();
+
 	precacheFX();
 	ambientFX();
-
 	level.scr_sound["flak88_explode"] = "flak88_explode";
 }
 
 precacheFX()
 {
 	level._effect["flak_explosion"] = [[level.ex_PrecacheEffect]]("fx/explosions/flak88_explosion.efx");
-
 	if(level.ex_ambsmokefx)
 	{
 		level._effect["battlefield_smokebank_S"] = [[level.ex_PrecacheEffect]]("fx/smoke/battlefield_smokebank_S.efx");
@@ -20,12 +20,32 @@ precacheFX()
 	}
 
 	if(level.ex_ambfogbankfx) level._effect["fogbank_small_duhoc"] = [[level.ex_PrecacheEffect]]("fx/misc/fogbank_small_duhoc.efx");
-
 	if(level.ex_ambdustfx) level._effect["dust_wind"] = [[level.ex_PrecacheEffect]]("fx/dust/dust_wind_eldaba.efx");
 }
 
 ambientFX()
 {
+	/*
+	maps\mp\_fx::loopfx("fogbank_small_duhoc", (1568,2712,-47), 2, (1568,2712,52));
+	maps\mp\_fx::loopfx("fogbank_small_duhoc", (-1102,1725,-27), 2, (-1102,1725,72));
+	maps\mp\_fx::loopfx("fogbank_small_duhoc", (567,3433,-52), 2, (567,3433,47));
+	maps\mp\_fx::loopfx("thin_black_smoke_M", (266,620,280), 1, (266,620,379));
+
+	//original dust fx DO NOT DELETE
+	maps\mp\_fx::loopfx("dust_wind", (-240,1574,-23), 1, (-240,1574,76));
+	maps\mp\_fx::loopfx("dust_wind", (-240,1110,-23), 1, (-240,1110,76));
+	maps\mp\_fx::loopfx("dust_wind", (473,966,-2), 1, (473,966,97));
+	maps\mp\_fx::loopfx("dust_wind", (1546,2003,-42), 1, (1546,2003,57));
+	maps\mp\_fx::loopfx("dust_wind", (1511,1078,-39), 1, (1511,1078,60));
+	maps\mp\_fx::loopfx("dust_wind", (1398,349,-16), 1, (1398,349,83));
+	maps\mp\_fx::loopfx("dust_wind", (935,2569,-49), 1, (935,2569,50));
+	maps\mp\_fx::loopfx("dust_wind", (-228,2353,-15), 1, (-228,2353,84));
+	maps\mp\_fx::loopfx("dust_wind", (470,238,2), 1, (470,238,101));
+	maps\mp\_fx::loopfx("dust_wind", (362,-202,46), 1, (362,-202,145));
+	maps\mp\_fx::loopfx("dust_wind", (372,-673,46), 1, (372,-673,145));
+	maps\mp\_fx::loopfx("dust_wind", (-242,485,-8), 1, (-242,485,90));
+	*/
+
 	if(level.ex_ambsmokefx)
 	{
 		maps\mp\_fx::loopfx("battlefield_smokebank_S", (6477,14914,416), 1, (6477,14914,516));
@@ -59,4 +79,12 @@ ambientFX()
 		maps\mp\_fx::loopfx("dust_wind", (3542,14915,346), 0.6, (3542,14915,446));
 		maps\mp\_fx::loopfx("dust_wind", (6580,15490,386), 0.6, (6580,15490,486));
 	}
+}
+
+lampglowfx()
+{
+	if(!isDefined(level._effect)) level._effect = [];
+	if(!isDefined(level._effect["lantern_light"]))
+		level._effect["lantern_light"] = [[level.ex_PrecacheEffect]]("fx/props/glow_latern.efx");
+	//thread maps\mp\_fx::loopfx("lantern_light", self.origin, 0.3, self.origin + (0,0,1), undefined, "lantern_stop");
 }

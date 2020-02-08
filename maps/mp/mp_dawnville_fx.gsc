@@ -33,6 +33,7 @@ ambientFX()
 	{
 		maps\mp\_fx::loopfx("thin_light_smoke_M", (-804,-16125,-74), 1, (-804,-16125,25));
 		maps\mp\_fx::loopfx("thin_light_smoke_M", (-400,-15553,-62), 1, (-400,-15553,36));
+
 		maps\mp\_fx::loopfx("battlefield_smokebank_S", (620,-15642,1), 1, (620,-15642,101));
 		maps\mp\_fx::loopfx("battlefield_smokebank_S", (2536,-15436,-84), 1, (2536,-15436,15));
 		maps\mp\_fx::loopfx("battlefield_smokebank_S", (-302,-17245,32), 1, (-302,-17245,132));
@@ -41,6 +42,7 @@ ambientFX()
 		maps\mp\_fx::loopfx("battlefield_smokebank_S", (626,-16903,56), 1, (626,-16903,156));
 		maps\mp\_fx::loopfx("battlefield_smokebank_S", (-1014,-17478,37), 1, (-1014,-17478,137));
 		maps\mp\_fx::loopfx("battlefield_smokebank_S", (-1819,-17836,-11), 1, (-1819,-17836,88));
+
 		maps\mp\_fx::loopfx("thin_black_smoke_S", (-563,-17506,65), 0.6, (-563,-17506,164));
 		maps\mp\_fx::loopfx("thin_black_smoke_S", (390,-17422,56), 0.6, (390,-17422,155));
 	}

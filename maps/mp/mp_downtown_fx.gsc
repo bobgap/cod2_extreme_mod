@@ -23,6 +23,7 @@ ambientFX()
 	if(level.ex_ambsnowfx)
 	{
 		maps\mp\_fx::loopfx("snow_light", (1635,-1393,375), 0.8, (1635,-1393,475));
+	
 		maps\mp\_fx::loopfx("snow_wind_cityhall", (414,-2231,32), 0.5, (414,-2231,132));
 		maps\mp\_fx::loopfx("snow_wind_cityhall", (1711,-2363,129), 0.5, (1711,-2363,229));
 		maps\mp\_fx::loopfx("snow_wind_cityhall", (3635,-1707,143), 0.5, (3635,-1707,243));

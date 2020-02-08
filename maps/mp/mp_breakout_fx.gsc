@@ -32,10 +32,12 @@ ambientFX()
 	if(level.ex_ambfirefx)
 	{
 		maps\mp\_fx::loopfx("tank_fire_turret", (5093,4164,51), 1, (5092,4167,151));
+
 		maps\mp\_fx::loopfx("tank_fire_turret_large", (4986,5787,78), 1, (4986,5787,178));
 		maps\mp\_fx::loopfx("tank_fire_turret_large", (4096,5772,76), 1, (4096,5772,176));
 		maps\mp\_fx::loopfx("tank_fire_turret_large", (3327,3435,84), 1, (3327,3435,184));
 		maps\mp\_fx::loopfx("tank_fire_turret_large", (6561,4004,41), 1, (6569,4023,139));
+
 		maps\mp\_fx::loopfx("tank_fire_engine", (4067,5872,65), 1, (4067,5872,165));
 		maps\mp\_fx::loopfx("tank_fire_engine", (5069,5867,89), 1, (5069,5867,189));
 		maps\mp\_fx::loopfx("tank_fire_engine", (5088,5775,73), 1, (5088,5775,173));
@@ -70,12 +72,15 @@ ambientFX()
 		maps\mp\_fx::loopfx("battlefield_smokebank_S", (3297,3336,9), 1, (3297,3336,109));
 		maps\mp\_fx::loopfx("battlefield_smokebank_S", (3182,4365,-3), 1, (3182,4365,96));
 		maps\mp\_fx::loopfx("battlefield_smokebank_S", (3190,5324,-31), 1, (3190,5324,68));
+
 		maps\mp\_fx::loopfx("thin_black_smoke_S", (3099,5756,49), 0.6, (3099,5756,149));
 		maps\mp\_fx::loopfx("thin_black_smoke_S", (5785,6221,11), 0.6, (5785,6221,111));
 		maps\mp\_fx::loopfx("thin_black_smoke_S", (5900,3412,20), 0.6, (5900,3412,120));
+
 		maps\mp\_fx::loopfx("thin_black_smoke_M", (5546,4722,315), 1, (5546,4722,414));
 		maps\mp\_fx::loopfx("thin_black_smoke_M", (7782,7712,228), 1, (7782,7712,327));
 		maps\mp\_fx::loopfx("thin_black_smoke_M", (3809,4984,412), 1, (3809,4984,511));
+
 		maps\mp\_fx::loopfx("battlefield_smokebank_S", (5697,6475,-45), 1, (5697,6475,53));
 		maps\mp\_fx::loopfx("battlefield_smokebank_S", (4792,5770,24), 1, (4792,5770,123));
 		maps\mp\_fx::loopfx("battlefield_smokebank_S", (6591,6710,-66), 1, (6591,6710,33));
@@ -88,6 +93,7 @@ ambientFX()
 		maps\mp\_fx::soundfx("smallfire", (3316,5767,64));
 		maps\mp\_fx::soundfx("smallfire", (6122,4709,71));
 		maps\mp\_fx::soundfx("smallfire", (5300,4477,64));
+
 		maps\mp\_fx::soundfx("medfire", (3345,3349,117));
 		maps\mp\_fx::soundfx("medfire", (4082,5757,126));
 		maps\mp\_fx::soundfx("medfire", (5011,5791,127));

@@ -28,7 +28,8 @@ precacheFX()
 
 ambientFX()
 {
-	if(level.ex_ambsnowfx) maps\mp\_fx::loopfx("snow_light", (-75,-208,232), 0.6, (-75,-208,332));
+	if(level.ex_ambsnowfx)
+		maps\mp\_fx::loopfx("snow_light", (-75,-208,232), 0.6, (-75,-208,332));
 
 	if(level.ex_ambfirefx)
 	{

@@ -37,6 +37,7 @@ ambientFX()
 		maps\mp\_fx::loopfx("thin_black_smoke_M", (4168,-3115,301), 0.8, (4168,-3115,401));
 		maps\mp\_fx::loopfx("thin_black_smoke_M", (4168,-3115,301), 0.8, (4168,-3115,401));
 		maps\mp\_fx::loopfx("thin_black_smoke_M", (6901,-3773,261), 0.8, (6901,-3773,361));
+
 		maps\mp\_fx::loopfx("battlefield_smokebank_S", (7634,-4585,-67), 0.8, (7634,-4585,31));
 		maps\mp\_fx::loopfx("battlefield_smokebank_S", (7735,-3622,-37), 0.8, (7735,-3622,61));
 		maps\mp\_fx::loopfx("battlefield_smokebank_S", (7642,-1806,-23), 0.8, (7642,-1806,75));
@@ -45,6 +46,7 @@ ambientFX()
 		maps\mp\_fx::loopfx("battlefield_smokebank_S", (3909,-3186,-24), 0.8, (3909,-3186,74));
 		maps\mp\_fx::loopfx("battlefield_smokebank_S", (4090,-4227,-38), 0.8, (4090,-4227,61));
 		maps\mp\_fx::loopfx("battlefield_smokebank_S", (5938,-4938,-31), 0.8, (5938,-4938,67));
+
 		maps\mp\_fx::loopfx("thin_light_smoke_M", (3537,-3753,-4), 1, (3537,-3753,95));
 		maps\mp\_fx::loopfx("thin_light_smoke_M", (4807,-3306,0), 1, (4807,-3306,99));
 		maps\mp\_fx::loopfx("thin_light_smoke_M", (7495,-3321,-53), 1, (7495,-3321,46));
@@ -57,8 +59,11 @@ ambientFX()
 		maps\mp\_fx::loopfx("building_fire_small", (4294,-3288,169), 2, (4284,-3387,169));
 		maps\mp\_fx::loopfx("building_fire_small", (6678,-2444,277), 2, (6681,-2446,377));
 		maps\mp\_fx::loopfx("building_fire_small", (7707,-4243,162), 2, (7710,-4245,262));
+
 		maps\mp\_fx::loopfx("tank_fire_turret", (6380,-4174,20), 2, (6380,-4174,120));
+
 		maps\mp\_fx::loopfx("tank_fire_turret_large", (6456,-2043,63), 2, (6449,-2023,161));
+
 		maps\mp\_fx::loopfx("tank_fire_engine", (6356,-2068,47), 1, (6356,-2068,147));
 		maps\mp\_fx::loopfx("tank_fire_engine", (4176,-3262,285), 1, (4176,-3262,385));
 		maps\mp\_fx::loopfx("tank_fire_engine", (4194,-4207,62), 1, (4194,-4207,162));

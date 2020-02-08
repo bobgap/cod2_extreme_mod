@@ -11,11 +11,8 @@ main()
 precacheFX()
 {
 	level._effect["flak_explosion"]	= [[level.ex_PrecacheEffect]]("fx/explosions/flak88_explosion.efx");
-
 	if(level.ex_ambdustfx) level._effect["dust_wind"] = [[level.ex_PrecacheEffect]]("fx/dust/dust_wind_eldaba.efx");
-
 	if(level.ex_ambfogbankfx) level._effect["fogbank_small_duhoc"] = [[level.ex_PrecacheEffect]]("fx/misc/fogbank_small_duhoc.efx");
-
 	if(level.ex_ambfirefx)
 	{
 		level._effect["tank_fire_turret"] = [[level.ex_PrecacheEffect]]("fx/fire/tank_fire_turret_large.efx");

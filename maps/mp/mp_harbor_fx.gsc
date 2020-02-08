@@ -3,39 +3,36 @@ main()
 {
 	precacheFX();
 	ambientFX();
-
 	level.scr_sound["flak88_explode"] = "flak88_explode";
 }
 
 precacheFX()
 {
 	level._effect["flak_explosion"] = [[level.ex_PrecacheEffect]]("fx/explosions/flak88_explosion.efx");
-
 	if(level.ex_ambfirefx) level._effect["tank_fire_engine"] = [[level.ex_PrecacheEffect]]("fx/fire/tank_fire_engine.efx");
-
 	if(level.ex_ambsnowfx)
 	{
 		level._effect["snow_light"] = [[level.ex_PrecacheEffect]]("fx/misc/snow_light_mp_downtown.efx");
 		level._effect["snow_wind_cityhall"] = [[level.ex_PrecacheEffect]]("fx/misc/snow_wind_cityhall.efx");
 	}
-
 	if(level.ex_ambsmokefx)
 	{
 		level._effect["thin_black_smoke_S"] = [[level.ex_PrecacheEffect]]("fx/smoke/thin_black_smoke_S.efx");
 		level._effect["thin_black_smoke_M"] = [[level.ex_PrecacheEffect]]("fx/smoke/thin_black_smoke_M.efx");
 	}
-
 	if(level.ex_ambfogbankfx) level._effect["fogbank_small_duhoc"] = [[level.ex_PrecacheEffect]]("fx/misc/fogbank_small_duhoc.efx");
 }
 
 ambientFX()
 {
+	//Snow
 	if(level.ex_ambsnowfx)
 	{
 		maps\mp\_fx::loopfx("snow_light", (-11246,-7164,450), 0.6, (-11246,-7164,530));
 		maps\mp\_fx::loopfx("snow_light", (-7352,-7369,450), 0.6, (-7352,-7369,530));
 	}
 	
+	//Wind FX
 	if(level.ex_ambsmokefx)
 	{
 		maps\mp\_fx::loopfx("thin_black_smoke_S", (-6653,-7064,-30), 1, (-6653,-7064,70));
@@ -47,6 +44,7 @@ ambientFX()
 		maps\mp\_fx::loopfx("thin_black_smoke_M", (-9325,-9553,828), 1, (-9325,-9553,928));
 	}
 
+	//Wind FX
 	if(level.ex_ambsnowfx)
 	{
 		maps\mp\_fx::loopfx("snow_wind_cityhall", (-8014,-8515,34), 1, (-8014,-8515,134));
@@ -73,6 +71,7 @@ ambientFX()
 		maps\mp\_fx::loopfx("snow_wind_cityhall", (-9264,-8633,174), 1, (-9264,-8633,274));
 	}
 
+	//interrior fog
 	if(level.ex_ambfogbankfx)
 	{
 		maps\mp\_fx::loopfx("fogbank_small_duhoc", (-8449,-8819,-33), 2, (-8449,-8819,66));
@@ -81,12 +80,14 @@ ambientFX()
 		maps\mp\_fx::loopfx("fogbank_small_duhoc", (-8399,-7360,28), 2, (-8399,-7360,128));
 	}
 
+	//barrel fire
 	if(level.ex_ambfirefx)
 	{
 		maps\mp\_fx::loopfx("tank_fire_engine", (-8687,-7065,64), 1, (-8687,-7065,164));
 		maps\mp\_fx::loopfx("tank_fire_engine", (-8642,-8987,43), 1, (-8642,-8987,143));
 	}
 
+	//firesounds
 	if(level.ex_ambsoundfx)
 	{
 		maps\mp\_fx::soundfx("medfire", (-8681,-7063,66));

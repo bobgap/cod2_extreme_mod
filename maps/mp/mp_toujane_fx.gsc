@@ -3,6 +3,7 @@ main()
 {
 	precacheFX();
 	ambientFX();
+
 	exploderFX();
 
 	level.scr_sound["flak88_explode"] = "flak88_explode";
@@ -11,11 +12,8 @@ main()
 precacheFX()
 {
 	level._effect["flak_explosion"] = [[level.ex_PrecacheEffect]]("fx/explosions/flak88_explosion.efx");
-
 	if(level.ex_ambdustfx) level._effect["dust_wind"] = [[level.ex_PrecacheEffect]]("fx/dust/dust_wind_brown.efx");
-
 	if(level.ex_ambfogbankfx) level._effect["fogbank_small_duhoc"] = [[level.ex_PrecacheEffect]]("fx/misc/fogbank_small_duhoc.efx");
-
 	if(level.ex_ambsmokefx) level._effect["smoke_plumeBG"] = [[level.ex_PrecacheEffect]]("fx/smoke/smoke_plumeBG_toujane.efx");
 }
 

@@ -26,6 +26,7 @@ ambientFX()
 	{
 		maps\mp\_fx::loopfx("battlefield_smokebank_S", (-257,1154,91), 1, (-257,1154,191));
 		maps\mp\_fx::loopfx("battlefield_smokebank_S", (-3502,-1477,-68), 1, (-3502,-1477,31));
+
 		maps\mp\_fx::loopfx("thin_light_smoke_M", (854,264,142), 1, (854,264,242));
 		maps\mp\_fx::loopfx("thin_light_smoke_M", (196,-1383,47), 1, (196,-1383,147));
 		maps\mp\_fx::loopfx("thin_light_smoke_M", (-237,-1389,158), 1, (-237,-1389,258));

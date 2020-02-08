@@ -6,7 +6,6 @@ init()
 
 	if(getCvar("scr_teambalance") == "") setCvar("scr_teambalance", "0");
 	level.teambalance = getCvarInt("scr_teambalance");
-
 	level.ex_autobalancing = false;
 	if(level.ex_teamplay)
 	{
