@@ -819,6 +819,18 @@ checkScoreLimit()
 	if(game["scorelimit"] <= 0) return;
 	if(game["matchpaused"]) return;
 
+	timepassed = (getTime() - level.starttime) / 1000;
+	timepassed = timepassed / 60.0;
+	halftimelim = game["halftimelimit"];
+	fulltimelim = halftimelim + halftimelim;
+	
+	if(((getTeamScore("allies") - getTeamScore("axis")) > 4) || ((getTeamScore("axis") - getTeamScore("allies")) > 4)) //Automatically end game when one team becomes 5 points ahead of other, unless less that 2 minutes remaining
+	{
+
+		if((timepassed+2) > fulltimelim) return;
+		iprintln("^3Up by 5 Points? Oh My! Have some Mercy!!!");
+		level thread endMap();
+	}	
 	if(level.ex_bestof)
 	{
 		if(getTeamScore("allies") < level.bestoflimit && getTeamScore("axis") < level.bestoflimit) return;
